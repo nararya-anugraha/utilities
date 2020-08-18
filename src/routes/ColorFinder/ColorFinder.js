@@ -33,7 +33,6 @@ const ColorFinder = () => {
 
   useEffect(() => {
     const newHexCode = decToHex([r, g, b]);
-    console.log({ newHexCode });
     setFieldValue("hexCode", newHexCode);
   }, [r, g, b, setFieldValue]);
 
@@ -42,14 +41,12 @@ const ColorFinder = () => {
       return;
     }
     const rgb = hexToDec(hexCode);
-    console.log(rgb);
     setFieldValue("r", rgb[0]);
     setFieldValue("g", rgb[1]);
     setFieldValue("b", rgb[2]);
   }, [hexCode, setFieldValue]);
 
   const nearestColors = getNearestColors(hexCode);
-  console.log(nearestColors);
 
   return (
     <div css={colorFinderStyle}>

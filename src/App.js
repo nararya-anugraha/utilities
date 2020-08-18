@@ -1,12 +1,9 @@
-import React, { Suspense } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import globalStyle from "@styles/globalStyle";
-import ColorFinder from "@routes/ColorFinder";
+import Routes from "./routes";
 import { AppProvider } from "@contexts/AppContext";
-
-const routes = [{ ...ColorFinder }];
 
 const App = () => (
   <HelmetProvider>
@@ -17,19 +14,9 @@ const App = () => (
       />
     </Helmet>
     <AppProvider>
-      <Router>
-        <Suspense fallback={null}>
-          <div css={globalStyle}>
-            <Switch>
-              {routes.map(({ path, Component }, index) => (
-                <Route path={`/${path}`} key={index}>
-                  <Component />
-                </Route>
-              ))}
-            </Switch>
-          </div>
-        </Suspense>
-      </Router>
+      <div css={globalStyle}>
+        <Routes />
+      </div>
     </AppProvider>
   </HelmetProvider>
 );

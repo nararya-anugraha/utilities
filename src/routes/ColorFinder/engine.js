@@ -3,7 +3,6 @@ import * as colorHex from "unify-token/build/v2/colors";
 const hexToDec = (hexCode) => {
   try {
     const cleanedHex = hexCode.replace(/[^\da-f]/gi, "");
-    console.log({ cleanedHex });
     let dec = parseInt(cleanedHex, 16);
     const b = dec % 256;
     dec = (dec - b) / 256;

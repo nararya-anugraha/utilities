@@ -6,11 +6,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const plugins = [
   new CleanWebpackPlugin(),
-  new HtmlWebpackPlugin({
-    base: "/utilities",
-    template: __dirname + "/src/index.html",
-    title: "Utilities",
-  }),
+  new HtmlWebpackPlugin({ template: __dirname + "/src/index.html" }),
   new DefinePlugin({
     "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
   }),

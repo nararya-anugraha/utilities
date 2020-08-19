@@ -7,6 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const plugins = [
   new CleanWebpackPlugin(),
   new HtmlWebpackPlugin({
+    base: "/utilities",
     template: __dirname + "/src/index.html",
     title: "Utilities",
   }),

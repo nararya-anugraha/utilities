@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import globalStyle from "@styles/globalStyle";
 import Routes from "./routes";
+import globalStyle from "@styles/globalStyle";
 import { AppProvider } from "@contexts/AppContext";
 
 const App = () => (

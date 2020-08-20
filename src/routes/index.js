@@ -1,9 +1,9 @@
 import React, { Suspense } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
-import globalStyle from "@styles/globalStyle";
 import ColorFinder from "./ColorFinder";
 import Home from "./Home";
+import globalStyle from "@styles/globalStyle";
 
 const routes = [{ ...ColorFinder }, { ...Home }];
 

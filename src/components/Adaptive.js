@@ -1,9 +1,9 @@
 import React from "react";
 import { bool, func, node } from "prop-types";
 
-import globalMobileStyle from "@styles/globalMobile";
+import globalStyle from "@styles/globalStyle";
+import globalMobileStyle from "@styles/globalMobileStyle";
 import globalDesktopStyle from "@styles/globalDesktopStyle";
-import globalStyle from "@styles/globaStyle";
 import useAdaptiveSize from "@hooks/useAdaptiveSize";
 
 const Adaptive = ({ Mobile, Desktop, ...props }) => {

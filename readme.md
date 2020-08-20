@@ -1,17 +1,17 @@
-#Utilities
+# Utilities
 
 This repository hosts all sort of small utilities. It uses gh-pages to deploy to Github pages.
 
-##Libraries Used
+## Libraries Used
 
 - react
 - react-router
 - webpack
 - gh-pages
 
-#Notes about developing for Github pages
+# Notes about developing for Github pages
 
-##Resolving bundle location
+## Resolving bundle location
 
 Github pages for repo are linked to `https://${userName}.github.io/${repoName}` this means that we need to set the index.html to fetch the bundle.js from `/${repoName}/bundle.js`. You can do this by hardcoding the repository name or using a helper library like `git-repo-name`. Here is the output section of the webpack production config.   
 
@@ -21,7 +21,7 @@ Github pages for repo are linked to `https://${userName}.github.io/${repoName}` 
        filename: "[name].[contenthash].js",
     },
 
-##Getting work with react router
+## Getting work with react router
 
 Github pages don't provide a way to reroute request like **nginx** or even **.htaccess**. Accessing `/utilities/page` will thus return a 404 error because we don't have `/page` folder. There are two ways to address this: 
 

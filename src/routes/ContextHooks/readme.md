@@ -77,7 +77,7 @@ return {
 
 ## Using the Hooks in Component
 
-The hooks can then be used in a Component such as [/routes/ColorFinder](https://github.com/nararya-anugraha/utilities/blob/master/src/routes/ColorFinder/ColorFinder.js). As you can see, the use is straight forward: 
+The hooks can then be used in a Component such as [/routes/ContextHooks](https://github.com/nararya-anugraha/utilities/blob/master/src/routes/ContextHooks/ContextHooks.js). As you can see, the use is straight forward: 
 
 ```
 const { users, loading } = useUsers();
@@ -168,7 +168,7 @@ const Child = () => {
 };
 ```
 
-In a lot of case this will cause an infinite useEffect() loop, because the userId gets reset again and again. In order to prevent that, you can change the hook in such way that when it is called without parameter, it would just return the data from the context: 
+In a lot of case this will cause an infinite useEffect() loop, because the userId gets reset again and again. In order to prevent that, you can change the hook in such way that when it is called without parameter, it would just returns the data from the context: 
 
 ```
 useEffect(() => {

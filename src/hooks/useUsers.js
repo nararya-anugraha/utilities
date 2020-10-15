@@ -24,6 +24,7 @@ const useUsers = () => {
 
   return {
     users,
+    refresh: refreshUsers,
     loading: usersAreLoading,
   };
 };

@@ -4,18 +4,22 @@ import { node, object } from "prop-types";
 const AppContext = createContext({});
 const { Provider } = AppContext;
 
-export const Consumer = AppContext.Consumer;
-
-export const AppProvider = ({ children, initialState }) => {
+const AppProvider = ({ children, initialState }) => {
+  /* 
+   The state variable will store all the data inside the app.
+   I am using 'setActualState'  because I want a different behaviour for the state setter 
+  */
   const [state, setActualState] = useState(initialState);
-  const setState = useCallback((newState, preUpdate) => {
-    setActualState((prevState) => {
-      if (preUpdate && preUpdate.call) {
-        preUpdate();
-      }
-      return { ...prevState, ...newState };
-    });
-  }, []);
+
+  /* 
+   Just like class based setState, the setState() function only replaces the field described inside it.
+   For example if you have state {a: 1, b: 2} calling setState({b: 3, c: 4)) 
+   will result in the state being {a:1, b:3, c:4} */
+  const setState = useCallback(
+    (newState) =>
+      setActualState((prevState) => ({ ...prevState, ...newState })),
+    []
+  );
 
   const appContextValue = {
     state: {
@@ -37,6 +41,6 @@ AppProvider.defaultProps = {
   initialState: {},
 };
 
-export const useAppContext = () => useContext(AppContext);
+const useAppContext = () => useContext(AppContext);
 
-export default AppContext;
+export { AppProvider, useAppContext };

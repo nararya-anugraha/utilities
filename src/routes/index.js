@@ -3,9 +3,10 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import ColorFinder from "./ColorFinder";
 import Home from "./Home";
+import ContextHooks from "./ContextHooks";
 import globalStyle from "@styles/globalStyle";
 
-const routes = [{ ...ColorFinder }, { ...Home }];
+const routes = [{ ...ColorFinder }, { ...ContextHooks }, { ...Home }];
 
 const App = () => (
   <Router basename="/utilities">

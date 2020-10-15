@@ -1,5 +1,5 @@
 import { css } from "@emotion/core";
-import { N300, N500 } from "unify-token/build/v2/colors";
+import { N400, N700 } from "unify-token/build/v2/colors";
 
 const utilities = {
   ".flex": {
@@ -23,12 +23,12 @@ const utilities = {
 
 const globalStyle = css({
   fontFamily: "'Roboto Mono', monospace",
-  color: N300,
+  color: N400,
   "p,h1,h2,h3,h4,h5": {
     margin: 0,
   },
   h1: {
-    color: N500,
+    color: N700,
   },
   ...utilities,
 });

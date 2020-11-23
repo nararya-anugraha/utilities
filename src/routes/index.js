@@ -1,12 +1,20 @@
 import React, { Suspense } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
+import ContextHooks from "./ContextHooks";
+
 import ColorFinder from "./ColorFinder";
 import Home from "./Home";
-import ContextHooks from "./ContextHooks";
+import Uploader from "./Uploader";
+
 import globalStyle from "@styles/globalStyle";
 
-const routes = [{ ...ColorFinder }, { ...ContextHooks }, { ...Home }];
+const routes = [
+  { ...ColorFinder },
+  { ...ContextHooks },
+  { ...Home },
+  { ...Uploader },
+];
 
 const App = () => (
   <Router basename="/utilities">

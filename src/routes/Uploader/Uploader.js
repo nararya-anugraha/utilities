@@ -1,23 +1,6 @@
 import { css } from "@emotion/core";
 import React, { useRef, useState } from "react";
-
-const reader = new FileReader();
-const imageObject = new Image();
-
-reader.addEventListener("load", () => {
-  const { result = "" } = reader;
-  imageObject.src = result;
-});
-
-const getImageSrc = (file) => {
-  return new Promise((resolve) => {
-    imageObject.addEventListener("load", () => {
-      const { src } = imageObject;
-      resolve(src);
-    });
-    reader.readAsDataURL(file);
-  });
-};
+import { getImageSrc } from "./util";
 
 const uploaderStyle = css({
   input: {

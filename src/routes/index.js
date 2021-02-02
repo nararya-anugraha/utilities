@@ -6,6 +6,7 @@ import ContextHooks from "./ContextHooks";
 import ColorFinder from "./ColorFinder";
 import Home from "./Home";
 import Uploader from "./Uploader";
+import StringTransform from "./StringTransform";
 
 import globalStyle from "@styles/globalStyle";
 
@@ -14,6 +15,7 @@ const routes = [
   { ...ContextHooks },
   { ...Home },
   { ...Uploader },
+  { ...StringTransform },
 ];
 
 const App = () => (

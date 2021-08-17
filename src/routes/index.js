@@ -8,9 +8,14 @@ import Home from "./Home";
 import Uploader from "./Uploader";
 import StringTransform from "./StringTransform";
 
+import CanvasDemo from "./CanvasDemo";
+import CanvasAnimation from "./CanvasAnimation";
+
 import globalStyle from "@styles/globalStyle";
 
 const routes = [
+  { ...CanvasAnimation },
+  { ...CanvasDemo },
   { ...ColorFinder },
   { ...ContextHooks },
   { ...Home },

@@ -6561,10 +6561,10 @@ unify-token@^1.7.0:
   resolved "https://registry.yarnpkg.com/unify-token/-/unify-token-1.7.0.tgz#d156a2a70dfeb43f575d810e09925b79959a1e9e"
   integrity sha512-HGpVuoKRi/H0KtE/Ugm8GbSJ+/sAgyvoGE5+LfjC8aRgEt9ICrL8dflGAEfSYv+Lfa4btXtBdYtwaEm0sQTXEw==
 
-unify-token@^1.7.1-dev-1:
-  version "1.7.1-dev-1"
-  resolved "https://registry.yarnpkg.com/unify-token/-/unify-token-1.7.1-dev-1.tgz#db48774478af4b972512000bcce6086d5c378595"
-  integrity sha512-rnh/RxdiCg4BxyGtxzTTd7CSuBPQR1kfq+aJQB6ODr5IzzPaAPWvrcZDQxD+abZ6GWbRoxh/Ejw7DWVpsVw6vQ==
+unify-token@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/unify-token/-/unify-token-2.2.0.tgz#d313a4da3c482379c429ab748e5ff7e1fff02efc"
+  integrity sha512-MjnU/Ao2aibx9j4Kynfb6yopvi76a5u0+5RJReWPuNsBcHcBhcm5K5Ym3/Md2T9DTEkPPsm/FLD4XtXZ7E414g==
 
 union-value@^1.0.0:
   version "1.0.1"

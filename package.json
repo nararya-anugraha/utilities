@@ -57,6 +57,6 @@
     "react-router-dom": "^5.2.0",
     "unify-react-desktop": "^0.3.2",
     "unify-react-mobile": "^3.11.1",
-    "unify-token": "^2.2.0"
+    "unify-token": "^2.4.0"
   }
 }

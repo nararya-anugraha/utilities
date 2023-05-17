@@ -1,4 +1,4 @@
-import * as colorHex from "unify-token/build/v2/colors";
+import * as colorHex from "unify-token/colors";
 
 const hexToDec = (hexCode) => {
   try {

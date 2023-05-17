@@ -11,7 +11,7 @@ This repository hosts all sort of small utilities. It uses gh-pages to deploy to
 
 # Notes about developing for Github pages
 
-This repo uses [gh-pages](https://www.npmjs.com/package/gh-pages) which will push dist files `gh-pages` branch. The `deploy` command will run `predeploy` first,  which will build the JS intu a bundle. 
+This repo uses [gh-pages](https://www.npmjs.com/package/gh-pages) which will push dist files `gh-pages` branch. The `deploy` command will run `predeploy` first,  which will build the JS into a bundle. 
 
 ## Resolving bundle location
 
